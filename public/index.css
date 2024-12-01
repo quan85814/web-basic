@@ -214,9 +214,6 @@ header h1 {
   margin-bottom: 15px;
 }
 
-.event .icon.training {
-  background-color: #785ef0;
-}
 
 .event .icon.la-liga {
   background-color: #4caf50;
@@ -246,6 +243,7 @@ header h1 {
 .match{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #3073bba2;
   margin: -20px;
   padding: 20px;
@@ -255,5 +253,8 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
+
+.content{
+  margin-top: 20px;
 }
