@@ -1,344 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real Madrid News</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/mdb.min.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="main-article">
-        <img
-          src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--1de2766b-1c26-427c-9d7d-33c8bb451b7e/ND_LIGA_RM_MANRESA_ALEGRIA_GRUPO_01_MJ15478.app.webp?preferwebp=true&width=1440"
-          alt="Real Madrid Basketball"
-        />
-        <div class="main-text">
-          <h1>Real Madrid-Hiopos Lleida: first ever Endesa League encounter</h1>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="article">
-          <img
-            src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--837b6479-4304-4622-9d89-f9d5f0995eef/_330800264641.app.webp?preferwebp=true&width=400"
-            alt="Puskas"
-          />
-          <h2>Eighteen years without Puskas</h2>
-        </div>
-        <div class="article">
-          <img
-            src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--67140eec-0aa5-429a-8267-ccaab6bf6638/ND_LIGA_RM_OSASUNA_ALEGRIA_GRUPO_07_2VC8321.app.webp?preferwebp=true&width=400"
-            alt="Fixtures"
-          />
-          <h3>Real Madrid's fixtures in the run-up to Christmas</h3>
-        </div>
-        <div class="article">
-          <img
-            src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--3b7fce62-5bae-426c-8a59-19fecc07ca9d/SELECION_10112024_16x9.app.webp?preferwebp=true&width=400"
-            alt="Players"
-          />
-          <h3>
-            Schedule for the Real Madrid players called up to represent their
-            national teams
-          </h3>
-        </div>
-      </div>
-      <div class="container">
-        <header>
-          <h1>Next Events</h1>
-          <div class="header-options"></div>
-        </header>
-        <div class="events">
-          <div class="event">
-            <img
-              src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--66a94fb5-e248-4fad-8c36-e7b7435ead64/imagen_agenda_entrenamiento.app.webp?preferwebp=true&width=1440"
-              alt=""
-            />
-            <div class="content">
-              <h3>Training</h3>
-              <p>Behind closed door.</p>
-              <p><strong>Monday, Nov 18, 3:00 PM</strong></p>
-              <p>Real Madrid City</p>
-              <p>Press conference: no.</p>
-            </div>
-          </div>
-          <div class="event">
-            <div class="match">
-              <div class="team">
-                <img
-                  width="56"
-                  height="56"
-                  src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--2488dc44-9453-4c47-b643-71dac891fef5/_krm0f4yr1l80j1sd7823f9xn.app.webp?preferwebp=true&width=144&height=144"
-                  alt=""
-                  class="logo"
-                />
-                <span class="name">Leganes</span>
-              </div>
-              <div class="league">
-                <img
-                  src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/common/statics/public-content/competition/football/34pl8szyvrbwcmfkuocjm3r6t-logo.app.svg?$Mobile$&wid=144&hei=144"
-                  alt="league"
-                  width="48"
-                  height="46"
-                />
-              </div>
-              <div class="team">
-                <img
-                  width="56"
-                  height="56"
-                  src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--b05ba79b-d2fc-4155-b958-210c4694a6de/_kq9cckrnlogidldtdie2fkbl.app.webp?preferwebp=true&width=56&height=56"
-                  alt=""
-                  class="logo"
-                />
-                <span class="name">Real Madrid</span>
-              </div>
-            </div>
-            <div class="content">
-              <h3>La Liga</h3>
-              <p>Matchday 14</p>
-              <p><strong>Sunday, Nov 24, 6:30 PM</strong></p>
-              <p>Estadio Municipal de Butarque</p>
-            </div>
-          </div>
-          <div class="event">
-            <div class="icon champions-league"></div>
-            <div class="content">
-              <h3>Champions League</h3>
-              <p>Matchday 5</p>
-              <p><strong>Wednesday, Nov 27, 9:00 PM</strong></p>
-              <p>Anfield</p>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Madrid News</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="mb-4">
+      <h1 class="text-center mb-3">Real Madrid Highlights</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Fixtures</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Players</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <!-- Main Article -->
+    <div class="main-article">
+      <img
+        src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--1de2766b-1c26-427c-9d7d-33c8bb451b7e/ND_LIGA_RM_MANRESA_ALEGRIA_GRUPO_01_MJ15478.app.webp?preferwebp=true&width=1440"
+        alt="Real Madrid Basketball" />
+      <div class="main-text">
+        <h1>Real Madrid-Hiopos Lleida: first ever Endesa League encounter</h1>
       </div>
     </div>
-    <footer class="bg-body-tertiary text-center">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-outline btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
 
-          <!-- Twitter -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-outline btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-twitter"></i
-          ></a>
+    <!-- Grid Articles -->
+    <div class="grid">
+      <div class="article">
+        <img
+          src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--837b6479-4304-4622-9d89-f9d5f0995eef/_330800264641.app.webp?preferwebp=true&width=400"
+          alt="Puskas" />
+        <h3>Eighteen years without Puskas</h3>
+      </div>
+      <div class="article">
+        <img
+          src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--67140eec-0aa5-429a-8267-ccaab6bf6638/ND_LIGA_RM_OSASUNA_ALEGRIA_GRUPO_07_2VC8321.app.webp?preferwebp=true&width=400"
+          alt="Fixtures" />
+        <h3>Real Madrid's fixtures in the run-up to Christmas</h3>
+      </div>
+      <div class="article">
+        <img
+          src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--3b7fce62-5bae-426c-8a59-19fecc07ca9d/SELECION_10112024_16x9.app.webp?preferwebp=true&width=400"
+          alt="Players" />
+        <h3>
+          Schedule for the Real Madrid players called up to represent their national teams
+        </h3>
+      </div>
+    </div>
 
-          <!-- Google -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-outline btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-google"></i
-          ></a>
-
-          <!-- Instagram -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-outline btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-instagram"></i
-          ></a>
-
-          <!-- Linkedin -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-outline btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-
-          <!-- Github -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-outline btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Form -->
-        <section class="">
-          <form action="">
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center">
-              <!--Grid column-->
-              <div class="col-auto">
-                <p class="pt-2">
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input
-                    type="email"
-                    id="form5Example24"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="form5Example24"
-                    >Email address</label
-                  >
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-auto">
-                <!-- Submit button -->
-                <button
-                  data-mdb-ripple-init
-                  type="submit"
-                  class="btn btn-outline mb-4"
-                >
-                  Subscribe
-                </button>
-              </div>
-              <!--Grid column-->
+    <!-- Events Section -->
+    <div class="container">
+      <header>
+        <h1>Next Events</h1>
+      </header>
+      <div class="events">
+        <!-- La Liga Match -->
+        <div class="event">
+          <div class="match">
+            <div class="team">
+              <img width="56" height="56"
+                src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--86b14921-960b-4281-848f-83fca2618aa7/_czravw89omgc9o4s0w3l1bg5.app.webp?preferwebp=true&width=144&height=144"
+                alt="Athletic Logo" />
+              <span class="name">Athletic</span>
             </div>
-            <!--Grid row-->
-          </form>
-        </section>
-        <!-- Section: Form -->
-
-        <!-- Section: Text -->
-        <section class="mb-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
-          </p>
-        </section>
-        <!-- Section: Text -->
-
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a class="text-body" href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
-                </li>
-              </ul>
+            <div class="league">
+              <img
+                src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/common/statics/public-content/competition/football/34pl8szyvrbwcmfkuocjm3r6t-logo.app.svg?$Mobile$&wid=144&hei=144"
+                alt="League Logo" width="48" height="46" />
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a class="text-body" href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
-                </li>
-              </ul>
+            <div class="team">
+              <img width="56" height="56"
+                src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--b05ba79b-d2fc-4155-b958-210c4694a6de/_kq9cckrnlogidldtdie2fkbl.app.webp?preferwebp=true&width=56&height=56"
+                alt="Real Madrid Logo" />
+              <span class="name">Real Madrid</span>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a class="text-body" href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a class="text-body" href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-      </div>
-      <!-- Grid container -->
+          <div class="content">
+            <h3>La Liga</h3>
+            <p>Matchday 19</p>
+            <p><strong>Wednesday, Dec 4, 9:00 PM </strong></p>
+            <p>San Mamés Barria</p>
+          </div>
+        </div>
+        <!-- La Liga Match -->
+        <div class="event">
+          <div class="match">
+            <div class="team">
+              <img width="56" height="56"
+                src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--2488dc44-9453-4c47-b643-71dac891fef5/_krm0f4yr1l80j1sd7823f9xn.app.webp?preferwebp=true&width=144&height=144"
+                alt="Leganes Logo" />
+              <span class="name">Leganes</span>
+            </div>
+            <div class="league">
+              <img
+                src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/common/statics/public-content/competition/football/34pl8szyvrbwcmfkuocjm3r6t-logo.app.svg?$Mobile$&wid=144&hei=144"
+                alt="League Logo" width="48" height="46" />
+            </div>
+            <div class="team">
+              <img width="56" height="56"
+                src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--b05ba79b-d2fc-4155-b958-210c4694a6de/_kq9cckrnlogidldtdie2fkbl.app.webp?preferwebp=true&width=56&height=56"
+                alt="Real Madrid Logo" />
+              <span class="name">Real Madrid</span>
+            </div>
+          </div>
+          <div class="content">
+            <h3>La Liga</h3>
+            <p>Matchday 14</p>
+            <p><strong>Sunday, Nov 24, 6:30 PM</strong></p>
+            <p>Estadio Municipal de Butarque</p>
+          </div>
+        </div>
 
-      <!-- Copyright -->
-      <div
-        class="text-center p-3"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        © 2020 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
+        <!-- La Liga Match -->
+        <div class="event">
+          <div class="match">
+            <div class="team">
+              <img width="56" height="56"
+                src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--aba4d441-6492-4e31-af0b-85b82cbdf9dd/e75syeuawg3ql8nwpi3vr2btz.app.webp?preferwebp=true&width=144&height=144"
+                alt="Atalanta Logo" />
+              <span class="name">Atalanta</span>
+            </div>
+            <div class="league">
+              <img
+                src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/common/statics/public-content/competition/football/4oogyu6o156iphvdvphwpck10-logo-2.app.svg?$Mobile$&wid=144&hei=144"
+                alt="League Logo" width="48" height="46" />
+            </div>
+            <div class="team">
+              <img width="56" height="56"
+                src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--b05ba79b-d2fc-4155-b958-210c4694a6de/_kq9cckrnlogidldtdie2fkbl.app.webp?preferwebp=true&width=56&height=56"
+                alt="Real Madrid Logo" />
+              <span class="name">Real Madrid</span>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Champions League</h3>
+            <p>Matchday 6</p>
+            <p><strong>Tuesday, Dec 10, 9:00 PM</strong></p>
+            <p>Gewiss Stadium</p>
+          </div>
+        </div>
+
+        <!-- La Liga Match -->
+        <div class="event">
+          <div class="match">
+            <div class="team">
+              <img width="56" height="56"
+                src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9e33dc41-ff5d-4c0c-8235-80f900977441/_budh3j9xivsid3ptm8ptpy4k.app.webp?preferwebp=true&width=144&height=144"
+                alt="Vallecano Logo" />
+              <span class="name">Vallecano</span>
+            </div>
+            <div class="league">
+              <img
+                src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/common/statics/public-content/competition/football/34pl8szyvrbwcmfkuocjm3r6t-logo.app.svg?$Mobile$&wid=144&hei=144"
+                alt="League Logo" width="48" height="46" />
+            </div>
+            <div class="team">
+              <img width="56" height="56"
+                src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--b05ba79b-d2fc-4155-b958-210c4694a6de/_kq9cckrnlogidldtdie2fkbl.app.webp?preferwebp=true&width=56&height=56"
+                alt="Real Madrid Logo" />
+              <span class="name">Real Madrid</span>
+            </div>
+          </div>
+          <div class="content">
+            <h3>La Liga</h3>
+            <p>Matchday 19</p>
+            <p><strong>Wednesday, Dec 4, 9:00 PM</strong></p>
+            <p>San Mamés Barria</p>
+          </div>
+        </div>
+
       </div>
-      <!-- Copyright -->
-    </footer>
-    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
-  </body>
+    </div>
+  </div>
+  <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Newsletter Signup -->
+      <section>
+        <form action="" method="POST" aria-label="Newsletter Signup Form">
+          <div class="row d-flex justify-content-center">
+            <!-- Newsletter text -->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Subscribe to our Newsletter</strong>
+              </p>
+            </div>
+            <!-- Email input field -->
+            <div class="col-md-5 col-12">
+              <div class="form-outline mb-4">
+                <input type="email" id="newsletterEmail" name="email" class="form-control"
+                  placeholder="Enter your email" required aria-required="true" />
+                <label class="form-label" for="newsletterEmail">Email address</label>
+              </div>
+            </div>
+            <!-- Submit button -->
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline mb-4" aria-label="Subscribe to newsletter">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- Section: About Text -->
+      <section class="mb-4">
+        <p>
+          Stay connected with the latest updates, insights, and stories from our team.
+          Join our growing community and make an impact with us.
+        </p>
+      </section>
+      <!-- Section: Quick Links -->
+      <section>
+        <div class="row">
+          <!-- Quick Links Column 1 -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Resources</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-body" href="#!">FAQ</a></li>
+              <li><a class="text-body" href="#!">Support</a></li>
+              <li><a class="text-body" href="#!">Documentation</a></li>
+              <li><a class="text-body" href="#!">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- Quick Links Column 2 -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-body" href="#!">About Us</a></li>
+              <li><a class="text-body" href="#!">Careers</a></li>
+              <li><a class="text-body" href="#!">Blog</a></li>
+              <li><a class="text-body" href="#!">Press</a></li>
+            </ul>
+          </div>
+          <!-- Quick Links Column 3 -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Legal</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-body" href="#!">Privacy Policy</a></li>
+              <li><a class="text-body" href="#!">Terms of Service</a></li>
+              <li><a class="text-body" href="#!">Cookie Policy</a></li>
+              <li><a class="text-body" href="#!">Accessibility</a></li>
+            </ul>
+          </div>
+          <!-- Quick Links Column 4 -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Connect</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a class="text-body" href="#!">Facebook</a></li>
+              <li><a class="text-body" href="#!">Twitter</a></li>
+              <li><a class="text-body" href="#!">LinkedIn</a></li>
+              <li><a class="text-body" href="#!">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+      &copy; 2024 All Rights Reserved.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+</body>
+
 </html>

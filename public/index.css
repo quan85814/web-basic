@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
@@ -17,6 +18,30 @@ body {
   padding: 20px;
 }
 
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.header-options span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.header-options a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Main Article Styles */
 .main-article {
   display: flex;
   align-items: center;
@@ -41,12 +66,14 @@ body {
   color: #000;
 }
 
+/* Grid Layout */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
+/* Article Styles */
 .article {
   background: #fff;
   border-radius: 8px;
@@ -66,45 +93,13 @@ body {
   font-size: 1rem;
   color: #000;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 24px;
-  color: #333;
-}
-
-.header-options span {
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.header-options a {
-  color: #007bff;
-  text-decoration: none;
-}
-
+/* Event Styles */
 .events {
   display: flex;
-  gap: 20px;
-  overflow-x: auto;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
 }
 
 .event {
@@ -116,6 +111,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 300px;
 }
 
 .event .icon {
@@ -152,95 +148,8 @@ header h1 {
   color: #000;
 }
 
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 24px;
-  color: #333;
-}
-
-.header-options span {
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.header-options a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.events {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-}
-
-.event {
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  flex: 0 0 250px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 300px;
-}
-
-.event .icon {
-  height: 50px;
-  width: 50px;
-  background-color: #eee;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-
-.event .icon.la-liga {
-  background-color: #4caf50;
-}
-
-.event .icon.champions-league {
-  background-color: #ffc107;
-}
-
-.event h3 {
-  font-size: 18px;
-  color: #333;
-}
-
-.event p {
-  font-size: 14px;
-  color: #666;
-}
-
-.event p strong {
-  color: #000;
-}
-/* .event img {
-  width: 300px;
-} */
-
-.match{
+/* Match Section */
+.match {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -249,12 +158,14 @@ header h1 {
   padding: 20px;
 }
 
-.team{
+.team {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 90px;
 }
 
-.content{
+/* Content Section */
+.content {
   margin-top: 20px;
 }
